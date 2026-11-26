@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+header {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #334155;
+}
+
+header a {
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #38bdf8;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 16px 0;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background-color: #1e293b;
+  color: #f8fafc;
+  min-width: 240px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0369a1;
+}
+
+.erreur {
+  color: #fca5a5;
+  background-color: #450a0a;
+  border: 1px solid #991b1b;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-weight: bold;
+}
+
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.carte {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+}
+
+.carte h3 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  color: #e2e8f0;
+}
+
+.carte p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.icone {
+  font-size: 28px;
+  margin: 8px 0;
+}
+
+.barre-fond {
+  position: relative;
+  height: 12px;
+  background-color: #334155;
+  border-radius: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.barre {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #f97316);
+  border-radius: 6px;
+}
+
+iframe {
+  max-width: 100%;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid #334155;
+  font-size: 13px;
+  color: #94a3b8;
+}

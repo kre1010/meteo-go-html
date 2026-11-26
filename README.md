@@ -10,4 +10,4 @@ question 3:
 Pour la recherche de saint-martin il y a beaucoup trop de ville qui ressorte ce qui explqiue que sur le projet il faudrait integre soit par l'endpoint soit par le code que l'indice de fiabilité soit prit en compt entre 0,9 et 1.
 
 question 4 : 
-Open-météo les renvoi sous forme de slice de int 
+Open-météo les renvois sous forme de slice de int. 

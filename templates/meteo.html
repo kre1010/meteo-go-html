@@ -1,0 +1,26 @@
+{{define "meteo.html"}}
+{{template "head" .}}
+{{if .Previsions}}
+<h2>Météo sur 7 jours - {{.Previsions.Commune.Nom}}</h2>
+<p>Code INSEE : {{.Previsions.Commune.Code}}</p>
+<div class="cartes">
+{{range .Previsions.Jours}}
+<div class="carte">
+<h3>{{frDate .Date}}</h3>
+<p class="icone">{{weatherIcon .WeatherCode}}</p>
+<p>{{weatherLabel .WeatherCode}}</p>
+<p>Min : <b>{{temp .TempMin}}</b> / Max : <b>{{temp .TempMax}}</b></p>
+<div class="barre-fond">
+<div class="barre" {{barAttr .LeftPercent .WidthPercent}}></div>
+</div>
+</div>
+{{end}}
+</div>
+<br>
+<h3>Carte</h3>
+<iframe src="{{.Previsions.MapURL}}" width="600" height="350"></iframe>
+{{end}}
+<br><br>
+<a href="/">Nouvelle recherche</a>
+{{template "foot" .}}
+{{end}}

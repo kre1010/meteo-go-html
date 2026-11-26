@@ -1,0 +1,13 @@
+{{define "villes.html"}}
+{{template "head" .}}
+<h2>Plusieurs villes trouvées pour "{{.Query}}"</h2>
+<p>Choisis une ville :</p>
+<ul>
+{{range .Communes}}
+<li><a href="/meteo?code={{.Code}}"><b>{{.Nom}}</b> - code {{.Code}} - {{.Population}} hab.</a></li>
+{{end}}
+</ul>
+<br>
+<a href="/">Nouvelle recherche</a>
+{{template "foot" .}}
+{{end}}

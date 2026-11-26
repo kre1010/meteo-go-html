@@ -1,0 +1,9 @@
+{{define "erreur.html"}}
+{{template "head" .}}
+<h2>Erreur {{.CodeHTTP}}</h2>
+<p class="erreur">{{.Message}}</p>
+<br>
+<a href="/">Retour accueil</a>
+
+{{template "foot" .}}
+{{end}}

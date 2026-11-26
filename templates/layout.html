@@ -1,0 +1,22 @@
+{{define "head"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>{{.Titre}}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1><a href="/">Météo 7 jours</a></h1>
+</header>
+<main>
+{{end}}
+{{define "foot"}}
+</main>
+<footer>
+  <p>Sources : geo.api.gouv.fr, Open-Meteo (CC BY 4.0) et OpenStreetMap</p>
+</footer>
+</body>
+</html>
+{{end}}

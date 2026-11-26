@@ -1,0 +1,13 @@
+{{define "accueil.html"}}
+{{template "head" .}}
+<h2>Rechercher une commune</h2>
+{{if .Message}}
+<p class="erreur">{{.Message}}</p>
+{{end}}
+<form action="/ville" method="get">
+  <label for="q">Ville :</label>
+  <input type="text" id="q" name="q" value="{{.Query}}" placeholder="Ex : Marseille">
+  <button type="submit">Chercher</button>
+</form>
+{{template "foot" .}}
+{{end}}
